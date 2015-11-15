@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.kumar.sunish.mygallery.Server">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/startServer"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clientUrl"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/startServer" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/barCodeImage"
+        android:layout_below="@+id/clientUrl"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/stopServer" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:id="@+id/stopServer"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/startServer"
+        android:layout_alignStart="@+id/startServer" />
+</RelativeLayout>
